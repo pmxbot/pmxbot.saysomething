@@ -33,6 +33,9 @@ params = dict(
 	),
 	python_requires='>=3.4',
 	install_requires=[
+		'more_itertools',
+		'jaraco.collections',
+		'jaraco.mongodb',
 	],
 	extras_require={
 		'testing': [
@@ -56,6 +59,9 @@ params = dict(
 		"Programming Language :: Python :: 3",
 	],
 	entry_points={
+		'pmxbot_handlers': [
+			'pmxbot say something = pmxbot.saysomething:Chains.initialize',
+		],
 	},
 )
 if __name__ == '__main__':
