@@ -42,7 +42,7 @@ params = dict(
 			'pytest>=2.8',
 			'pytest-sugar',
 			'collective.checkdocs',
-			'pmxbot>=1120',
+			'pmxbot>=1121',
 		],
 		'docs': [
 			'sphinx',
